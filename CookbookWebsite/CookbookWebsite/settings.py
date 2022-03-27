@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'cookbook',                      # Or path to database file if using sqlite3.
         'USER': 'remoteUser',                      # Not used with sqlite3.
-        'PASSWORD': 'Gamma99Quest',                  # Not used with sqlite3.
+        'PASSWORD': '1234',                  # Not used with sqlite3.
         'HOST': '10.0.248.15',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306', 
     }
