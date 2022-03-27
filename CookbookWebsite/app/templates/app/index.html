@@ -1,23 +1,35 @@
 <html>
-<head><title></title></head>
+<head>
+    <title>Erikson Cookbook Database</title>
+    {% load static %} <!-- Instruct Django to load static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+</head>
 
 <body>
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="/addrecipe">Add Recipe</a>
+        <a href="/random">Meal Planner</a>
+        <a href="/list">Recipe List</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
 
-<h1>Erikson Cookbook Database</h1>
-    <label>Search</label>
-    <textarea></textarea>
-<h3>Current Mealplan List for the Week of {{date}}</h3>
+        <h1>Erikson Cookbook Database</h1>
 
-<div id="Buttoms">
-    <form action="/addrecipe">
-        <input type="submit" value="Add Recipe" />
-    </form>
-    <form action="/random">
-        <input type="submit" value="Randomizer" />
-    </form>
-    <form action="/list">
-        <input type="submit" value="Recipe List" />
-    </form>
-</div>
+    <h3>Current Mealplan List for the Week of {{date}}</h3>
+    <ul>
+        <li>Recipe 1</li>
+        <li>Recipe 2</li>
+        <li>Recipe 3</li>
+        <li>Recipe 4</li>
+        <li>Recipe 5</li>
+        <li>Recipe 6</li>
+        <li>Recipe 7</li>
+    </ul>
 </body>
 </html>

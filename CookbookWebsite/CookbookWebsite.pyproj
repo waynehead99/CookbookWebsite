@@ -48,6 +48,7 @@
     <Compile Include="CookbookWebsite\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\site.css" />
     <Content Include="app\templates\app\index.html" />
     <Content Include="app\templates\app\addrecipe.html" />
     <Content Include="app\templates\app\list.html" />
@@ -57,6 +58,7 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="CookbookWebsite\" />

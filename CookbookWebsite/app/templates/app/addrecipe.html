@@ -4,19 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <title>Add Recipe</title>
+    {% load static %} <!-- Instruct Django to load static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
 </head>
 <body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/addrecipe">Add Recipe</a>
+        <a href="/random">Meal Planner</a>
+        <a href="/list">Recipe List</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
     <h1>Erikson Cookbook Database</h1>
-    <label>Search</label>
-    <textarea></textarea>
     <label>Recipe URL</label>
     <textarea></textarea>
     <label>Name</label>
     <textarea></textarea>
-    <div id="Buttoms">
-        <form action="/">
-            <input type="submit" value="Return Home" />
-        </form>
-    </div>
 </body>
 </html>
