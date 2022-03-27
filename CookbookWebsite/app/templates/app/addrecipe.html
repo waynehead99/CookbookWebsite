@@ -6,6 +6,8 @@
     <title>Add Recipe</title>
     {% load static %} <!-- Instruct Django to load static files -->
     <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="topnav">
@@ -14,16 +16,24 @@
         <a href="/random">Meal Planner</a>
         <a href="/list">Recipe List</a>
         <div class="search-container">
-            <form action="/action_page.php">
+            <form>
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
     </div>
     <h1>Erikson Cookbook Database</h1>
-    <label>Recipe URL</label>
-    <textarea></textarea>
-    <label>Name</label>
-    <textarea></textarea>
+    <form>
+        Recipe URL:
+        <input type="text" name="recipeURL" />
+        <br>
+        <br>
+        Recipe Name:
+        <input type="text" name="recipeName" />
+        <br>
+        <br>
+        <input type="submit" value="Add Recipe">
+    </form>
+
 </body>
 </html>

@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\site.css" />
+    <Content Include="app\static\list.css" />
     <Content Include="app\templates\app\index.html" />
     <Content Include="app\templates\app\addrecipe.html" />
     <Content Include="app\templates\app\list.html" />

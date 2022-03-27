@@ -3,6 +3,8 @@
     <title>Erikson Cookbook Database</title>
     {% load static %} <!-- Instruct Django to load static files -->
     <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -12,7 +14,7 @@
         <a href="/random">Meal Planner</a>
         <a href="/list">Recipe List</a>
         <div class="search-container">
-            <form action="/action_page.php">
+            <form>
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -22,14 +24,15 @@
         <h1>Erikson Cookbook Database</h1>
 
     <h3>Current Mealplan List for the Week of {{date}}</h3>
-    <ul>
-        <li>Recipe 1</li>
-        <li>Recipe 2</li>
-        <li>Recipe 3</li>
-        <li>Recipe 4</li>
-        <li>Recipe 5</li>
-        <li>Recipe 6</li>
-        <li>Recipe 7</li>
+
+    <ul class="gradient-list">
+        <li><a href="/list">Recipe 1</a></li>
+        <li><a href="/list">Recipe 2</a></li>
+        <li><a href="/list">Recipe 3</a></li>
+        <li><a href="/list">Recipe 4</a></li>
+        <li><a href="/list">Recipe 5</a></li>
+        <li><a href="/list">Recipe 6</a></li>
+        <li><a href="/list">Recipe 7</a></li>
     </ul>
 </body>
 </html>

@@ -6,6 +6,8 @@
     <title>Recipe List</title>
     {% load static %} <!-- Instruct Django to load static files -->
     <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="topnav">
@@ -14,7 +16,7 @@
         <a href="/random">Meal Planner</a>
         <a class="active" href="/list">Recipe List</a>
         <div class="search-container">
-            <form action="/action_page.php">
+            <form>
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -24,9 +26,9 @@
     <h2>List of Recipes</h2>
 
     <ul>
-        <li>Recipe 1</li>
-        <li>Recipe 2</li>
-        <li>Recipe 3</li>
+        <li><a href="/list">Recipe 1</li>
+        <li><a href="/list">Recipe 2</li>
+        <li><a href="/list">Recipe 3</li>
     </ul>
 </body>
 </html>
